@@ -17,4 +17,4 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 COPY . .
 
 # Comonado padrão do container: inicia o servidor Gunicorn
-CMD gunicorn conf.wsgi:application --bind 0.0.0.0:8000
+ENTRYPOINT ["sh", "-c", "python manage.py makemigrations && python manage.py migrate && gunicorn conf.wsgi:application --bind 0.0.0.0:8000"]
