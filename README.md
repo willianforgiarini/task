@@ -10,3 +10,5 @@ Funcionalidades
 - Auditoria: registro de alterações, criações e deleções de tarefas
 - Paginação e filtros nas listagens
 - Documentação automática via Swagger e Redoc
+
+.
